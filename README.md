@@ -85,8 +85,6 @@ v1.1.0 **BREAKING CHANGES**
  3. remove setTimout from orientation listener
  4. Add getAutoRotateState() for Android
  5. Add TypeScript definitions
-
-[[more]](https://github.com/wonday/react-native-orientation-locker/releases)
 </details>
 
 ### Notice
@@ -121,15 +119,15 @@ Just remove it from linked libraries and frameworks
 #### Using yarn (RN 0.60 and and above)
 
 ```
-    yarn add react-native-orientation-locker
+    yarn add @hortau/react-native-orientation-locker
 ```
 
 
 #### Using yarn (RN 0.59 and and below)
 
 ```
-    yarn add react-native-orientation-locker
-    react-native link react-native-orientation-locker
+    yarn add @hortau/react-native-orientation-locker
+    react-native link @hortau/react-native-orientation-locker
 ```
 #### Manual linking
 For Windows, if you are using RNW v0.63.0 or higher, autolinking should link the module for you. Otherwise, you must follow the steps outlined [here](https://microsoft.github.io/react-native-windows/docs/native-modules-using) for linking module.
@@ -229,11 +227,11 @@ Add following to MainApplication.java
 ### Imperative API
 
 Whenever you want to use it within React Native code now you can:
-`import Orientation from 'react-native-orientation-locker';`
+`import Orientation from '@hortau/react-native-orientation-locker';`
 
 ```js
 
-import Orientation from 'react-native-orientation-locker';
+import Orientation from '@hortau/react-native-orientation-locker';
 
 
   _onOrientationDidChange = (orientation) => {
@@ -293,7 +291,7 @@ It is possible to have multiple `OrientationLocker` components mounted at the sa
 ```js
 import React, { useState } from "react";
 import { Text, View } from "react-native";
-import { OrientationLocker, PORTRAIT, LANDSCAPE } from "react-native-orientation-locker";
+import { OrientationLocker, PORTRAIT, LANDSCAPE } from "@hortau/react-native-orientation-locker";
 
 export default function App() {
   const [showVideo, setShowVideo] = useState(true);
