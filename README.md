@@ -1,5 +1,5 @@
 # react-native-orientation-locker
-[![npm](https://img.shields.io/npm/v/react-native-orientation-locker.svg?style=flat-square)](https://www.npmjs.com/package/react-native-orientation-locker)
+[![npm](https://img.shields.io/npm/v/@hortau/react-native-orientation-locker.svg?style=flat-square)](https://www.npmjs.com/package/@hortau/react-native-orientation-locker)
 
 A react-native module that can listen on orientation changing of device, get current orientation, lock to preferred orientation. (cross-platform support)
 
@@ -12,6 +12,9 @@ A react-native module that can listen on orientation changing of device, get cur
 ### ChangeLog
 <details>
   <summary>ChangeLog details</summary>
+
+v1.5.1
+1. Fix: iOS 16 Rotation Detection
 
 v1.5.0
 1. Fix: threading issue on Windows and fix android not triggering event in some cases
