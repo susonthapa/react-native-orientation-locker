@@ -387,3 +387,8 @@ orientation can return one of:
 - `UNKNOWN`
 
 Notice: PORTRAIT-UPSIDEDOWN is currently not supported on iOS at the moment. FACE-UP and FACE-DOWN are only supported on iOS and Windows.
+
+## Publish to GitHub Packages
+    npm login --scope=@hortau --auth-type=legacy --registry=https://npm.pkg.github.com
+    npm publish
+    npm publish --@hortau:registry=https://registry.npmjs.org

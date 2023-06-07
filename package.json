@@ -1,6 +1,6 @@
 {
     "name": "@hortau/react-native-orientation-locker",
-    "version": "1.5.2",
+    "version": "1.6.0",
     "summary": "A react-native module that can listen on orientation changing of device",
     "description": "A react-native module that can listen on orientation changing of device, get current orientation, lock to preferred orientation.",
     "homepage": "https://github.com/hortau/react-native-orientation-locker",
@@ -44,6 +44,7 @@
         "react-native-windows": "^0.63.3"
     },
     "publishConfig": {
-        "access": "public"
+        "access": "public",
+        "registry": "https://npm.pkg.github.com"
     }
 }
