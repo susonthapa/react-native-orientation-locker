@@ -354,7 +354,7 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Ori
     public void start() {
         FLog.i(ReactConstants.TAG, "orientation detect enabled.");
         mOrientationListener.enable();
-        ctx.registerReceiver(mReceiver, new IntentFilter("onConfigurationChanged"));
+        ctx.registerReceiver(mReceiver, new IntentFilter("onConfigurationChanged"), Context.RECEIVER_NOT_EXPORTED);
         isConfigurationChangeReceiverRegistered = true;
     }
 
